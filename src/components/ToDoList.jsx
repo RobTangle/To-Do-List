@@ -4,6 +4,7 @@ import Pending from "./Pending";
 
 export default function ToDoList() {
   const [temp, setTemp] = useState("");
+  const [pending, setPending] = useState([]);
   const [done, setDone] = useState([]);
 
   return (
@@ -17,7 +18,7 @@ export default function ToDoList() {
               if (!temp) {
                 return alert("Ingrese una tarea");
               }
-              setDone([...done, temp]);
+              setPending([...pending, temp]);
               setTemp("");
             }}
           >
@@ -34,7 +35,7 @@ export default function ToDoList() {
         {/* /////////// */}
         <div className="listas">
           <div>
-            <Pending props={done} />
+            <Pending props={pending} />
           </div>
           <div>Done</div>
         </div>
