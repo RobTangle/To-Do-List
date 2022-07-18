@@ -21,14 +21,14 @@ export default function ToDoList() {
               setTemp("");
             }}
           >
-            <label htmlFor="">Add task</label>
+            <label htmlFor="">Add task: </label>
             <input
               type="text"
               placeholder="Task to do"
               value={temp}
               onChange={(e) => setTemp(e.target.value)}
             />
-            <button type="submit">Agregar task</button>
+            <button type="submit">Add to List</button>
           </form>
         </div>
         {/* /////////// */}
