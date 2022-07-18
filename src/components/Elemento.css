@@ -3,5 +3,8 @@
 }
 
 .elemento > div {
-  border: dotted yellow thin;
+  /* border: dotted yellow thin; */
+  border: solid rgb(44, 43, 43);
+  margin: 5px 5px;
+  background-color: cadetblue;
 }
