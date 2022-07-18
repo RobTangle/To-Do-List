@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import AddToDo from "./AddToDo";
 import "./ToDoList.css";
 import Pending from "./Pending";
 
 export default function ToDoList() {
-  const [pending, setPending] = useState([]);
+  const [temp, setTemp] = useState("");
   const [done, setDone] = useState([]);
 
   return (
@@ -15,26 +14,30 @@ export default function ToDoList() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              setDone([...done, pending]);
-              setPending("");
-              // setPending([]);
+              if (!temp) {
+                return alert("Ingrese una tarea");
+              }
+              setDone([...done, temp]);
+              setTemp("");
             }}
           >
             <label htmlFor="">Add task</label>
             <input
               type="text"
               placeholder="Task to do"
-              value={pending}
-              onChange={(e) => setPending(e.target.value)}
+              value={temp}
+              onChange={(e) => setTemp(e.target.value)}
             />
             <button type="submit">Agregar task</button>
           </form>
         </div>
         {/* /////////// */}
-        <div className="pending">
-          <Pending props={done} />
+        <div className="listas">
+          <div>
+            <Pending props={done} />
+          </div>
+          <div>Done</div>
         </div>
-        <div className="done">Done</div>
       </div>
     </>
   );

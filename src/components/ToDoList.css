@@ -1,11 +1,18 @@
-.pending {
-  height: 200px;
-  width: 40%;
+.listas {
+  height: auto;
+  /* width: auto; */
   border: solid black;
+  display: flex;
 }
 
-.done {
+.listas > div {
+  width: 100%;
+  margin: 10px;
+  border: solid blue;
+}
+
+/* .done {
   height: 200px;
   width: 40%;
   border: solid black;
-}
+} */
