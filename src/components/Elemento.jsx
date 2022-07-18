@@ -1,1 +1,7 @@
-export default function Elemento(props) {}
+export default function Elemento(props) {
+  return (
+    <>
+      <div className="elemento">Elemento</div>
+    </>
+  );
+}

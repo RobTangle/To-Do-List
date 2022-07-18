@@ -30,6 +30,7 @@ export default function ToDoList() {
             <button type="submit">Agregar task</button>
           </form>
         </div>
+        {/* /////////// */}
         <div className="pending">
           <Pending props={done} />
         </div>
