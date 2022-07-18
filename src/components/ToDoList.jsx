@@ -37,7 +37,12 @@ export default function ToDoList() {
         <div className="listas">
           <div>
             Pending:
-            <Pending pending={pending} setDone={setDone} done={done} />
+            <Pending
+              setPending={setPending}
+              pending={pending}
+              setDone={setDone}
+              done={done}
+            />
           </div>
           <div>
             Done: <br />
