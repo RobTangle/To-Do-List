@@ -1,0 +1,11 @@
+.pending {
+  height: 200px;
+  width: 40%;
+  border: solid black;
+}
+
+.done {
+  height: 200px;
+  width: 40%;
+  border: solid black;
+}
