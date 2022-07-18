@@ -47,7 +47,6 @@ export default function ToDoList() {
           <div>
             Done: <br />
             {/* <Pending pending={done} /> */}
-            <span>Elemento:</span>
             <Elemento done={done} />
           </div>
         </div>
