@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ToDoList.css";
 import Pending from "./Pending";
+import Elemento from "./Elemento";
 
 export default function ToDoList() {
   const [temp, setTemp] = useState("");
@@ -35,9 +36,15 @@ export default function ToDoList() {
         {/* /////////// */}
         <div className="listas">
           <div>
-            <Pending props={pending} />
+            Pending:
+            <Pending pending={pending} setDone={setDone} done={done} />
           </div>
-          <div>Done</div>
+          <div>
+            Done: <br />
+            {/* <Pending pending={done} /> */}
+            <span>Elemento:</span>
+            <Elemento done={done} />
+          </div>
         </div>
       </div>
     </>

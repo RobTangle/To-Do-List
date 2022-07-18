@@ -1,9 +1,24 @@
 import "./Pending.css";
 
-export default function Pending({ props }) {
-  const pendientes = props.map((elem) => {
+export default function Pending({ pending, done, setDone }) {
+  // function handleOnClick(e) {
+  //   //funciona! Pero voy a usar la función en la linea onClick directamente
+  //   setDone([
+  //     ...done,
+  //     (function () {
+  //       return e.target.innerText;
+  //     })(),
+  //   ]);
+  // }
+
+  const pendientes = pending.map((elem) => {
     return (
-      <div className="elementoPending" key={Math.random().toFixed(4)}>
+      <div
+        className="elementoPending"
+        key={Math.random().toFixed(6)}
+        onClick={(e) => setDone([...done, e.target.innerText])}
+        // onClick={(e) => handleOnClick(e)}
+      >
         {elem}
       </div>
     );
@@ -12,7 +27,6 @@ export default function Pending({ props }) {
   return (
     <>
       <div className="elemPending">
-        PENDING:
         <div>{pendientes}</div>
       </div>
     </>

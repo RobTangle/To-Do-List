@@ -8,7 +8,7 @@ export default function Navbar() {
         <span>To Do List</span>
       </Link>
       <Link to="/">
-        <span className="homeSpan">Home</span>
+        <span className="homeSpan">Home and Clear/Erase List</span>
       </Link>
     </div>
   );

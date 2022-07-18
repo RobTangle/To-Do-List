@@ -1,0 +1,7 @@
+.elemento {
+  /* border: green solid; */
+}
+
+.elemento > div {
+  border: dotted yellow thin;
+}

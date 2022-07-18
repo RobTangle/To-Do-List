@@ -11,7 +11,7 @@ function App() {
         <h1>To Do List</h1>
         <Route path="/" component={NavBar} />
         <Route exact path="/" component={Home} />
-        <Route exact path="/toDo" component={ToDoList} />
+        <Route path="/toDo" component={ToDoList} />
         {/* <ToDoList /> */}
       </div>
     </>
