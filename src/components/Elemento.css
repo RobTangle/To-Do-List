@@ -1,5 +1,7 @@
 .elemento {
   /* border: green solid; */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .elemento > div {

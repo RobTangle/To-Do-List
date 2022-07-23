@@ -4,11 +4,11 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <div className="navbar">
-      <Link to="/toDo">
+      <Link to="/">
         <span>To Do List</span>
       </Link>
-      <Link to="/">
-        <span className="homeSpan">Home and Clear/Erase List</span>
+      <Link to="/erased">
+        <span className="homeSpan">Clear/Erase List</span>
       </Link>
     </div>
   );

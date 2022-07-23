@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h2>Welcome to the To Do List HOME</h2>
+      <h2>You just erased and existed the To Do List component</h2>
     </div>
   );
 }

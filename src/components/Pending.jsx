@@ -2,7 +2,6 @@ import "./Pending.css";
 
 export default function Pending({ pending, done, setDone, setPending }) {
   function handleOnClick(e) {
-    //funciona! Pero voy a usar la función en la linea onClick directamente
     setDone([
       ...done,
       (function () {
