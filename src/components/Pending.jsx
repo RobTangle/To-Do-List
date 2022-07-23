@@ -15,6 +15,7 @@ export default function Pending({ pending, done, setDone, setPending }) {
     return (
       <div
         className="elementoPending"
+        id={Math.random().toFixed(7)}
         key={Math.random().toFixed(6)}
         // onClick={(e) => setDone([...done, e.target.innerText])}
         onClick={(e) => handleOnClick(e)}

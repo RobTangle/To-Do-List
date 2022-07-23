@@ -1,5 +1,9 @@
 .elementoPending {
-  border: solid rgb(44, 43, 43);
+  /* border: solid rgb(44, 43, 43);
   margin: 5px 5px;
-  background-color: cadetblue;
+  background-color: cadetblue; */
+  border-radius: 5px;
+  margin: 5px 5px;
+  background-color: rgba(150, 146, 146, 0.308);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

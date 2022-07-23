@@ -6,7 +6,8 @@
 
 .elemento > div {
   /* border: dotted yellow thin; */
-  border: solid rgb(44, 43, 43);
+  /* border: solid rgb(44, 43, 43); */
+  border-radius: 5px;
   margin: 5px 5px;
-  background-color: cadetblue;
+  background-color: rgba(150, 146, 146, 0.308);
 }

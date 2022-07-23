@@ -26,11 +26,11 @@ export default function ToDoList() {
             <label htmlFor="">Add task: </label>
             <input
               type="text"
-              placeholder="Task to do"
+              placeholder="Task to do..."
               value={temp}
               onChange={(e) => setTemp(e.target.value)}
             />
-            <button type="submit">Add to List</button>
+            <button type="submit">Add</button>
           </form>
         </div>
         {/* /////////// */}
@@ -38,6 +38,7 @@ export default function ToDoList() {
           <div>
             Pending:
             <Pending
+              key={Math.random().toFixed(6)}
               setPending={setPending}
               pending={pending}
               setDone={setDone}
